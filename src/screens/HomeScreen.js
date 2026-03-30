@@ -1,11 +1,10 @@
-import React from "react";
-import { View, Text, StyleSheet, Image, Pressable } from "react-native";
+import { View, Text, StyleSheet, Image, Pressable, ScrollView } from "react-native";
 
-export default function homeScreen({ navigation }) {
+export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <Image
-        source={require=("../assets/image.png")}
+       source={require("C:/Users/46559720845/Downloads/modeloAt01_S1_R2/modeloAt01_S1_R2/assets/image.png")}
         style={styles.logo}
       />
 
@@ -27,10 +26,10 @@ export default function homeScreen({ navigation }) {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, alignItems: "center", justifyContent: "center", padding: 20 },
-  logo: { width: 120, height: 120, marginBottom: 20 },
-  titulo: { fontSize: 24, fontWeight: "bold" },
-  descricao: { textAlign: "center", marginVertical: 15 },
+  container: { flex: 1, alignItems: "center", justifyContent: "center", padding: 40 },
+  logo: { width: 200, height: 200, marginBottom: 20 },
+  titulo: { fontSize: 34, fontWeight: "bold" },
+  descricao: { textAlign: "center", marginVertical: 25 },
   botao: {
     backgroundColor: "#007bff",
     padding: 12,
